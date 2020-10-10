@@ -33,3 +33,4 @@ public class GetSubSeq {
         return myString;
     }
 }
+
