@@ -9,9 +9,7 @@ public class FactorialRec {
         sc.close();
     }
     static int fact(int n){
-        if(n==0) return 1;
-        int fnm1 = fact(n-1);
-        int fn = n*fnm1;
-        return fn;
+        if(n==0 || n==1) return 1;
+        return (n*fact(n-1));
     }
 }
