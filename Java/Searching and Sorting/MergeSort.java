@@ -6,6 +6,7 @@ public class MergeSort {
         System.out.println("Enter Array size: ");
         int n = sc.nextInt();
         int a[] = new int[n];
+        System.out.println("Enter Array: ");
         for(int i=0; i<n; i++){
 			a[i] = sc.nextInt();
 		}
