@@ -10,6 +10,16 @@ public class LinkedList {
     private Node tail;
     private int size;
 
+    //to find size
+    public int size(){
+        return this.size;
+    }
+
+    //to find if Linked List is empty or not
+    public boolean isEmpty(){
+        return this.size()==0;
+    }
+
     //to display the linked list
     public void display() throws Exception {
         if(size == 0){
@@ -91,6 +101,14 @@ public class LinkedList {
             nn.next = np1;
             this.size++;
         }
+    }
+
+    //get first element of Linked List
+    public int getFirst() throws Exception{
+        if(size == 0){
+            throw new Exception("Linked List is empty");
+        }
+        return this.head.data;
     }
 
     //to get data of given index
