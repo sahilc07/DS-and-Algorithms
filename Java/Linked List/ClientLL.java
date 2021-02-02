@@ -21,5 +21,10 @@ public class ClientLL {
         LL.reversePointers();
         LL.display();
         System.out.println(LL.getMid());
+        LL.addLast(70);
+        LL.addLast(80);
+        LL.addLast(90);
+        LL.display();
+        System.out.println(LL.kElementFromEnd(3));
     }
 }

@@ -250,4 +250,21 @@ public class LinkedList {
         }
         return slow.data;
     }
+
+    //to get kth element from the end of lnked list
+    public int kElementFromEnd(int k){
+        Node slow = this.head;
+        Node fast = this.head;
+
+        for(int i=0; i<k; i++){
+            fast = fast.next;
+        }
+
+        while(fast != null){
+            slow = slow.next;
+            fast = fast.next;
+        }
+
+        return slow.data;
+    }
 }
