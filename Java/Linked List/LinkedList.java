@@ -189,15 +189,16 @@ public class LinkedList {
     //     }
 
     //     if(index == 0){
-    //         removeFirst();
+    //         this.removeFirst();
     //     }else if(index == this.size-1){
-    //         removeLast();
+    //         this.removeLast();
     //     }else{
     //         Node nm1 = getNode(index-1);
     //         Node n = nm1.next;
     //         Node np1 = n.next;
     //         nm1.next = np1;
     //         this.size--;
+
     //         return n.data;
     //     }
     // }
